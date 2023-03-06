@@ -7,7 +7,7 @@
     <title>La fábrica del Lupulo</title>
     <link rel="icon" type="image/png" href="./img/lupulo_favicon.jpg" sizes="16x16">
     <!-- BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">        
 </head>
@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end">
                         <li class="nav-item active">
-                            <a class="nav-link" href="./Index.html">Bienvenido <span class="sr-only"></span></a>
+                            <a class="nav-link" href="../index.html">Bienvenido <span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./nuevos_tubos.html">Nuevos tubos</a>
@@ -43,43 +43,24 @@
 
     <!-- Cuerpo -->
     <main>
-        <h1 class="Titulo_principal">Probá nuestros nuevos brebajes</h1>
-        <section class="productos">
-            <article class="productos_Cervezas_grid_container">
-                <div class="txt_producto_container">
-                    <p class="txt_descripcion_producto1">IPA Lupulada: Esta cerveza India Pale Ale es conocida por su sabor a lúpulo intenso y amargor equilibrado. El uso de lúpulos aromáticos y de amargor le da a esta cerveza un perfil de sabor complejo y vibrante
-                    </p>
-                </div>
-                <div class="img_producto_container">
-                    <img class="foto_producto1" src="./img/Lupulada1.jpeg" alt="" width="440" height="450">
-                </div>
-            </article>
-            <article class="productos_Cervezas_grid_container2">
-                <div class="txt_producto_container">
-                    <p class="txt_descripcion_producto2">Doble IPA Lupulada: Con un doble impacto de lúpulos, esta cerveza Double IPA ofrece una experiencia aún más intensa y compleja. El amargor es fuerte, pero equilibrado por notas dulces y frutales, y un aroma a lúpulo fresco
-                    </p>
-                </div>
-                <div class="img_producto_container">
-                    <img class="foto_producto2" src="./img/Lupulada 2.jpg" alt="" width="450" height="400">
-                </div>    
-            </article>
-            <article class="productos_Cervezas_grid_container">
-                <div class="txt_producto_container">
-                    <p class="txt_descripcion_producto3">Session IPA Lupulada: Esta Session IPA es perfecta para aquellos que disfrutan de una cerveza lupulada pero con un alcohol más bajo. Con un amargor suave y una intensidad moderada de lúpulo, esta cerveza es refrescante y fácil de beber
-                    </p>
-                </div>                    
-                <div class="img_producto_container">
-                    <img class="foto_producto3" src="./img/Lupulada3.jpg" alt="" width="500" height="400">
-                </div>                    
-            </article>                        
-        </section> 
+        <h1 class="Titulo_principal">¿Tenes una consulta para nosotros? Escribinos:</h1>
+        <section class="cuerpo">
+            <form action="/enviar-mensaje" method="POST">
+                <label for="nombre">Nombre:</label><br/>
+                <input type="text" id="nombre" name="nombre" /><br/>
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" /><br/>
+                <label for="mensaje">Motivo del contacto:</label><br />
+                <textarea id="mensaje" name="mensaje"></textarea><br/>
+                <input type="submit" value="Enviar mensaje"/>
+            </form>
+        </section>   
+        
     <!--Logo whap-->
         <div class="img_container_whap">
             <img class="logo_whap" src="./img/icono_whap.png" alt="Logo_Whatsapp">
-        </div>          
-        
+        </div>           
     </main>
-
 
 <!-- Footer -->
 <footer class="nb-footer">
@@ -121,7 +102,5 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
-
-
 
 </html>

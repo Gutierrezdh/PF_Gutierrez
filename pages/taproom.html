@@ -7,9 +7,9 @@
     <title>La fábrica del Lupulo</title>
     <link rel="icon" type="image/png" href="./img/lupulo_favicon.jpg" sizes="16x16">
     <!-- BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/estilos.css">        
+    <link rel="stylesheet" href="./css/estilos.css">           
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end">
                         <li class="nav-item active">
-                            <a class="nav-link" href="./Index.html">Bienvenido <span class="sr-only"></span></a>
+                            <a class="nav-link" href="../index.html">Bienvenido <span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./nuevos_tubos.html">Nuevos tubos</a>
@@ -43,24 +43,32 @@
 
     <!-- Cuerpo -->
     <main>
-        <h1 class="Titulo_principal">¿Tenes una consulta para nosotros? Escribinos:</h1>
         <section class="cuerpo">
-            <form action="/enviar-mensaje" method="POST">
-                <label for="nombre">Nombre:</label><br/>
-                <input type="text" id="nombre" name="nombre" /><br/>
-                <label for="email">Email:</label><br />
-                <input type="email" id="email" name="email" /><br/>
-                <label for="mensaje">Motivo del contacto:</label><br />
-                <textarea id="mensaje" name="mensaje"></textarea><br/>
-                <input type="submit" value="Enviar mensaje"/>
-            </form>
-        </section>   
-        
-    <!--Logo whap-->
+            <h1 class="Titulo_principal">Nuestro TapRoom</h1>
+            <article class="body_taproom">
+                <div class="txt_taproom_container">
+                    <p class="txt_taproom"> 
+                    El taproom de la cervecería es un lugar acogedor con un ambiente agradable y un servicio amable.
+                    Ofrece una amplia selección de cervezas artesanales, con una variedad de estilos para satisfacer a cualquier paladar.
+                    El personal es conocedor y puede aconsejar sobre las mejores opciones para probar.
+                    La decoración del lugar es moderna y está diseñada para crear una atmósfera relajada.
+                    Contamos tambien con una amplia carta de comidas para acompañar tu cerveza con el aperitivo ideal.
+                    El taproom es un lugar perfecto para una noche de bebidas con amigos o para una cita informal.
+                    Si sos amante de la cerveza tenes que conocerlo.
+                    </p>
+                </div>
+                <div class="img_taproom_container">
+                    <img class="img_taproom" src="./img/TapRoom.jpg" alt="TapRoom" height="500px" width="800px">
+                </div>
+            </article>
+        </section>    
+
+        <!--Logo whap-->
         <div class="img_container_whap">
             <img class="logo_whap" src="./img/icono_whap.png" alt="Logo_Whatsapp">
-        </div>           
+        </div> 
     </main>
+
 
 <!-- Footer -->
 <footer class="nb-footer">
@@ -83,7 +91,8 @@
                 <p>La fabrica del lupulo<br> 
                 Calle falsa 123 <br>        
                 Buenos Aires <br>
-                Argentina <br></p>
+                Argentina <br>
+                </p>
             </div>
         </div>
     </div>
@@ -93,14 +102,15 @@
 </div>
 
 <!-- BootStrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
+
 
 </html>
