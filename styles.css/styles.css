@@ -25,7 +25,6 @@
     font-size: 30px;    
 }
 
-
 /* Cuerpo */
 h1{
     height: 150px;
@@ -142,53 +141,46 @@ footer {
     list-style-type: none;
 }
 
-
-
-
 /* Body TapRoom */
 .body_taproom{
     display: grid;
     grid-template-areas: "foto_taproom desc-taproom";
-    grid-template-columns: "1fr 1fr";
+    grid-template-columns: 2fr 2fr;    
 }
 
 .img_taproom_container{
     grid-area: foto_taproom;  
-    width: 600px;
+    width: 800px;
     height: 500px;
-    margin-left: 50px;
     margin-bottom: 35px;
+    text-align: center;    
 }
 
 .img_taproom{
-    width: 600px;
-    height: 500px;
+    width: 95%;
+    height: 95%;    
 }
 
 .txt_taproom_container{
     grid-area: desc-taproom;
     height: 100%;
-    margin-right: 80px;
-    margin-left: 80px;    
-    margin-top: 130px;    
+    width: 90%;
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
 }
 
 /* Body nosotros */
 article .reseña_nosotros{
     height: 100%;
-    width: 100%;   
 }
 
 .text_nosotros{
-    height: 100%;
-    width: 70%;
+    display: flex;
+    width: 100%;
     text-align: center;
-    margin: 0;
-    margin-left: 250px;
-    padding: 0;
-    margin-bottom: 10px;
     font-size: 18px;
-    font-family: 'roboto', sans-serif;  
+    justify-content: center; 
 }
 
 .iframe_mapa{
@@ -326,7 +318,7 @@ input[type="submit"]:hover {
     .img_container_whap{
     height: 3rem;
     width: 3rem;
-    top:92%;
+    top:70%;
     left:88%;
     }
     .img_container_whap:hover{
