@@ -1,0 +1,64 @@
+
+/* Responsive 768px */
+@media screen and (min-width:481px) and (max-width:768px)
+{
+      /* NavBar */
+    .navbar-nav{
+        height: 300px
+    } 
+    .navbar .nav-item {
+        padding: 10px 20px;
+        background-color: #3a5a40;    
+    }
+    .navbar .nav-link {
+    font-size: 20px;
+    margin-left: 10px;    
+    }
+    /* Cuerpo */
+    .Titulo_principal {
+        height: 70px;
+        width: 100%;
+        font-size: 30px;
+        font-weight:bold;
+    }            
+    .intro_welcome_img_container{ 
+        width: 94%;
+        height: 50%;
+    }
+    .intro_welcome_txt_container{
+        font-size: 16px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    /* Productos */
+    .productos_Cervezas_grid_container{
+        font-size: 20px;
+
+    }
+    .productos_Cervezas_grid_container2{
+        font-size: 20px; 
+    }      
+    .img_producto_container{
+        height:100%;
+        width: 100%;
+        align-items: center;   
+        justify-content: center;    
+    }
+    .foto_producto1{   
+        height: 70%;
+        width: 80%;
+    } 
+    .txt_descripcion_producto1{
+        font-size: 16px;
+    }    
+    /* Logo Whap */
+    .img_container_whap{
+        height: 3rem;
+        width: 3rem;
+        top:92%;
+        left:88%;
+    }
+    .img_container_whap:hover{
+        display: none
+    } 
+}

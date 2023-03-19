@@ -1,0 +1,12 @@
+
+/* Reset  */
+@use './partials/reset';
+
+/* SCSS resolucion desktop */
+@use './partials/desktop';
+
+/* SCSS Resolucion mobile hasta 480px */
+@use './partials/responsiveto480';
+
+/* SCSS Resolucion mobile desde 481px hasta 768px */
+@use './partials/responsiveto768';
