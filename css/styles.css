@@ -139,12 +139,25 @@ h1 {
   left: 93%;
   z-index: 100;
 }
-.img_container_whap:hover {
-  transform: scale(1.1);
-}
 .img_container_whap .logo_whap {
   height: 100%;
   width: 100%;
+}
+.img_container_whap .logo_whap:hover {
+  transform: scale(1.1);
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  border-radius: 80%;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
 }
 
 /* footer */
