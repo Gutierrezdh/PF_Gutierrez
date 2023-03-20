@@ -2,6 +2,9 @@
 /* Reset  */
 @use './partials/reset';
 
+/* Archivo de variables  */
+@use './partials/variables';
+
 /* SCSS resolucion desktop */
 @use './partials/desktop';
 
@@ -10,3 +13,5 @@
 
 /* SCSS Resolucion mobile desde 481px hasta 768px */
 @use './partials/responsiveto768';
+
+

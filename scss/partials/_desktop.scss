@@ -1,11 +1,16 @@
+/* Importo variables globales */
+@use './variables' as vars;
+
+
+
 /* Barra de menu */
 .navbar {
     height: 100%;
     width: 100%;
-    background-color:  #3a5a40;
+    background-color: vars.$bkcolorprimario;
     .nav-item {
         padding: 10px 20px;
-        background-color: #3a5a40;    
+        background-color: vars.$bkcolorprimario;    
     }
     .nav-link {
         font-size: 20px;
@@ -142,7 +147,7 @@ h1{
 /* footer */
 footer {
     height: 132px;
-    background-color: #3a5a40;
+    background-color: vars.$bkcolorprimario;
     .row {
     width: 100%;
         .list-inline{
@@ -198,13 +203,22 @@ footer {
 .titulo_ubicacion{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 150px;
     width: 100%;
-} 
+}
+
+.iframe_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .iframe_mapa{
 margin-bottom: 50px;
-position: relative;
-left: 650px
+width: 50%;
+height:450px;
 }
 
 /* Formulario de Contacto */

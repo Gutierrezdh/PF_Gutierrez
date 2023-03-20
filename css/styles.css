@@ -6,6 +6,8 @@
   font-family: "roboto", sans-serif;
 }
 
+/* Declaro variables globales */
+/* Importo variables globales */
 /* Barra de menu */
 .navbar {
   height: 100%;
@@ -204,14 +206,22 @@ footer .row .ul_footer {
 .titulo_ubicacion {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 150px;
   width: 100%;
 }
 
+.iframe_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .iframe_mapa {
   margin-bottom: 50px;
-  position: relative;
-  left: 650px;
+  width: 50%;
+  height: 450px;
 }
 
 /* Formulario de Contacto */
@@ -251,150 +261,419 @@ form input[type=submit]:hover {
   background-color: #45a049;
 }
 
+/* Importo variables globales */
 /* Responsive 320px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   /* Cuerpo */
-  .Titulo_principal {
+  .cuerpo {
+    /*     Taproom */
+    /* Nosotros - Reseña*/
+    /* Nosotros - Ubicacion*/
+    /* formulario de contacto */
+  }
+  .cuerpo .Titulo_principal {
     height: 80px;
     width: 100%;
     font-size: 17px;
     font-weight: bold;
   }
-  .imagen_cervezas_welcome {
-    width: 100%;
-    height: 10%;
+  .cuerpo .intro_welcome_grid_container {
+    display: grid;
+    grid-template-areas: "foto" "presentacion";
+    grid-template-columns: 1fr;
   }
-  .intro_welcome_txt_container {
-    font-size: 10px;
+  .cuerpo .intro_welcome_grid_container .intro_welcome_img_container {
+    width: 100%;
     height: 100%;
-    width: 80%;
     margin-bottom: 20px;
   }
-  /* Logo Whap */
-  .img_container_whap {
+  .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container {
+    height: 100%;
+    width: 95%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container p {
+    font-size: 14px;
+  }
+  .cuerpo .body_taproom {
+    grid-template-areas: "foto_taproom" "desc-taproom";
+    grid-template-columns: 1fr;
+  }
+  .cuerpo .body_taproom .img_taproom_container {
+    width: 100%;
+    height: 100%;
+  }
+  .cuerpo .body_taproom .txt_taproom_container {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .cuerpo .body_taproom .txt_taproom_container .txt_taproom {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .cuerpo .reseña_nosotros .text_nosotros {
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .cuerpo .titulo_ubicacion {
+    height: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .cuerpo .iframe_container .iframe_mapa {
+    margin-bottom: 50px;
+    width: 90%;
+    height: 300px;
+  }
+  .cuerpo form {
+    width: 320px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+  }
+  .cuerpo form label {
+    font-size: 14px;
+  }
+  .cuerpo form input, .cuerpo form textarea {
+    font-size: 12px;
+  }
+  main {
+    /* Productos */
+    /* Logo Whap */
+  }
+  main .Titulo_principal {
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container {
+    grid-template-areas: "img" "txt";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container .img_producto_container {
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+  }
+  main .productos_Cervezas_grid_container .img_producto_container .foto_producto1 {
+    height: 100%;
+    width: 70%;
+  }
+  main .productos_Cervezas_grid_container .txt_producto_container .txt_descripcion_producto1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container2 {
+    grid-template-areas: "img" "txt";
+    grid-template-columns: 1fr;
+  }
+  main .productos_Cervezas_grid_container2 .img_producto_container {
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+  }
+  main .productos_Cervezas_grid_container2 .img_producto_container .foto_producto1 {
+    height: 100%;
+    width: 70%;
+  }
+  main .productos_Cervezas_grid_container2 .txt_producto_container .txt_descripcion_producto1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  main .img_container_whap {
     height: 4rem;
     width: 4rem;
     top: 85%;
     left: 80%;
   }
-  .img_container_whap:hover {
-    display: none;
-  }
-  /* Productos */
-  .img_producto_container {
-    height: 180px;
-    width: 180px;
-  }
-  .txt_descripcion_producto1 {
-    font-size: 12px;
+  main .img_container_whap:hover {
+    transform: scale(1);
   }
   .ul_footer {
     font-size: 80%;
   }
 }
 /* Responsive 480px */
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  /* Index */
-  .Titulo_principal {
-    height: 70px;
+@media screen and (min-width: 421px) and (max-width: 480px) {
+  /* Cuerpo */
+  .cuerpo {
+    /*     Taproom */
+    /* Nosotros - Reseña*/
+    /* Nosotros - Ubicacion*/
+    /* formulario de contacto */
+  }
+  .cuerpo .Titulo_principal {
+    height: 80px;
     width: 100%;
     font-size: 24px;
     font-weight: bold;
   }
-  .intro_welcome_img_container {
-    width: 100%;
-    height: 38%;
+  .cuerpo .intro_welcome_grid_container {
+    display: grid;
+    grid-template-areas: "foto" "presentacion";
+    grid-template-columns: 1fr;
   }
-  .intro_welcome_txt_container {
-    width: 78%;
-    font-size: 12px;
+  .cuerpo .intro_welcome_grid_container .intro_welcome_img_container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .cuerpo .intro_welcome_grid_container .intro_welcome_img_container .imagen_cervezas_welcome {
+    width: 50%;
+  }
+  .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container {
+    height: 100%;
+    width: 95%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container p {
+    font-size: 16px;
+  }
+  .cuerpo .body_taproom {
+    display: grid;
+    grid-template-areas: "foto_taproom" "desc-taproom";
+    grid-template-columns: 1fr;
+  }
+  .cuerpo .body_taproom .img_taproom_container {
+    width: 100%;
+    height: 100%;
+  }
+  .cuerpo .body_taproom .txt_taproom_container {
+    grid-area: desc-taproom;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
-  /* Productos */
-  .img_producto_container {
-    height: 210px;
-    width: 185px;
+  .cuerpo .body_taproom .txt_taproom_container .txt_taproom {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
   }
-  .txt_descripcion_producto1 {
-    font-size: 13px;
+  .cuerpo .reseña_nosotros .text_nosotros {
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
   }
-  /* Footer */
+  .cuerpo .titulo_ubicacion {
+    height: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .cuerpo .iframe_container .iframe_mapa {
+    margin-bottom: 50px;
+    width: 90%;
+    height: 300px;
+  }
+  .cuerpo form {
+    width: 100%;
+  }
+  main {
+    /* Productos */
+    /* Logo Whap */
+  }
+  main .Titulo_principal {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container {
+    grid-template-areas: "img" "txt";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container .img_producto_container {
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+  }
+  main .productos_Cervezas_grid_container .img_producto_container .foto_producto1 {
+    height: 100%;
+    width: 55%;
+  }
+  main .productos_Cervezas_grid_container .txt_producto_container .txt_descripcion_producto1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container2 {
+    grid-template-areas: "img" "txt";
+    grid-template-columns: 1fr;
+  }
+  main .productos_Cervezas_grid_container2 .img_producto_container {
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+  }
+  main .productos_Cervezas_grid_container2 .img_producto_container .foto_producto1 {
+    height: 100%;
+    width: 55%;
+  }
+  main .productos_Cervezas_grid_container2 .txt_producto_container .txt_descripcion_producto1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  main .img_container_whap {
+    height: 4rem;
+    width: 4rem;
+    top: 90%;
+    left: 90%;
+  }
+  main .img_container_whap:hover {
+    transform: scale(1);
+  }
   .ul_footer {
     font-size: 90%;
   }
-  /* Logo Whap */
-  .img_container_whap {
-    height: 3rem;
-    width: 3rem;
-    top: 70%;
-    left: 88%;
-  }
-  .img_container_whap:hover {
-    display: none;
-  }
 }
+/* Importo variables globales */
 /* Responsive 768px */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  /* NavBar */
-  .navbar-nav {
-    height: 300px;
-  }
-  .navbar .nav-item {
-    padding: 10px 20px;
-    background-color: #3a5a40;
-  }
-  .navbar .nav-link {
-    font-size: 20px;
-    margin-left: 10px;
-  }
   /* Cuerpo */
-  .Titulo_principal {
-    height: 70px;
+  .cuerpo {
+    /*     Taproom */
+    /* Nosotros - Reseña*/
+    /* Nosotros - Ubicacion*/
+    /* formulario de contacto */
+  }
+  .cuerpo .Titulo_principal {
+    height: 120px;
     width: 100%;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
   }
-  .intro_welcome_img_container {
-    width: 94%;
-    height: 50%;
+  .cuerpo .intro_welcome_grid_container {
+    grid-template-areas: "foto" "presentacion";
+    grid-template-columns: 1fr;
   }
-  .intro_welcome_txt_container {
-    font-size: 16px;
-    width: 80%;
+  .cuerpo .intro_welcome_grid_container .intro_welcome_img_container .imagen_cervezas_welcome {
+    width: 40%;
+    height: 90%;
+  }
+  .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container {
+    width: 100%;
     margin-bottom: 20px;
+    text-align: center;
   }
-  /* Productos */
-  .productos_Cervezas_grid_container {
-    font-size: 20px;
+  .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container p {
+    font-size: 17px;
   }
-  .productos_Cervezas_grid_container2 {
-    font-size: 20px;
+  .cuerpo .body_taproom {
+    grid-template-areas: "foto_taproom" "desc-taproom";
+    grid-template-columns: 1fr;
   }
-  .img_producto_container {
+  .cuerpo .body_taproom .img_taproom_container {
+    width: 100%;
+    height: 100%;
+  }
+  .cuerpo .body_taproom .txt_taproom_container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .cuerpo .body_taproom .txt_taproom_container .txt_taproom {
+    width: 90%;
+    font-size: 17px;
+    text-align: center;
+  }
+  .cuerpo .reseña_nosotros .text_nosotros {
+    font-size: 17px;
+  }
+  .cuerpo .titulo_ubicacion {
+    height: 100px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .cuerpo .iframe_container .iframe_mapa {
+    margin-bottom: 50px;
+    width: 90%;
+    height: 300px;
+  }
+  .cuerpo form {
+    width: 75%;
+    margin-bottom: 0px;
+    border: none;
+  }
+  .cuerpo form label {
+    font-size: 17px;
+  }
+  .cuerpo form input, .cuerpo form textarea {
+    font-size: 15px;
+  }
+  main {
+    /* Productos */
+    /* Logo Whap */
+  }
+  main .Titulo_principal {
     height: 100%;
     width: 100%;
-    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container {
+    grid-template-areas: "img" "txt";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container .img_producto_container {
+    height: 70%;
+    width: 100%;
     justify-content: center;
   }
-  .foto_producto1 {
+  main .productos_Cervezas_grid_container .img_producto_container .foto_producto1 {
+    height: 100%;
+    width: 40%;
+  }
+  main .productos_Cervezas_grid_container .txt_producto_container .txt_descripcion_producto1 {
+    font-size: 17px;
+    text-align: center;
+  }
+  main .productos_Cervezas_grid_container2 {
+    grid-template-areas: "img" "txt";
+    grid-template-columns: 1fr;
+  }
+  main .productos_Cervezas_grid_container2 .img_producto_container {
     height: 70%;
-    width: 80%;
+    width: 100%;
+    justify-content: center;
   }
-  .txt_descripcion_producto1 {
-    font-size: 16px;
+  main .productos_Cervezas_grid_container2 .img_producto_container .foto_producto1 {
+    height: 100%;
+    width: 40%;
   }
-  /* Logo Whap */
-  .img_container_whap {
-    height: 3rem;
-    width: 3rem;
-    top: 92%;
-    left: 88%;
+  main .productos_Cervezas_grid_container2 .txt_producto_container .txt_descripcion_producto1 {
+    font-size: 17px;
+    text-align: center;
   }
-  .img_container_whap:hover {
-    display: none;
+  main .img_container_whap {
+    height: 5rem;
+    width: 5rem;
+    top: 90%;
+    left: 93%;
+  }
+  main .img_container_whap:hover {
+    transform: scale(1);
+  }
+  .ul_footer {
+    font-size: 100%;
   }
 }
 /* Reset  */
+/* Archivo de variables  */
 /* SCSS resolucion desktop */
 /* SCSS Resolucion mobile hasta 480px */
 /* SCSS Resolucion mobile desde 481px hasta 768px */
