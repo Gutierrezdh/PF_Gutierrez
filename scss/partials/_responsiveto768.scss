@@ -104,12 +104,12 @@
         @include mix.unacolumna;
         text-align: center;  
             .img_producto_container{
-                height: 70%;
+                height: 80%;
                 width: 100%;
                 justify-content: center; 
                     .foto_producto1{
                     height: 100%;
-                    width: 40%;
+                    width: 30%;
                     }               
             }
             .txt_producto_container{
@@ -125,12 +125,12 @@
             "txt";
             @include mix.unacolumna;
                 .img_producto_container{
-                height: 70%;
+                height: 80%;
                 width: 100%;
                 justify-content: center; 
                     .foto_producto1{
                     height: 100%;
-                    width: 40%;
+                    width: 30%;
                     }               
                 }
                 .txt_producto_container{

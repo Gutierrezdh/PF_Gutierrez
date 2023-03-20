@@ -643,13 +643,13 @@ form input[type=submit]:hover {
     text-align: center;
   }
   main .productos_Cervezas_grid_container .img_producto_container {
-    height: 70%;
+    height: 80%;
     width: 100%;
     justify-content: center;
   }
   main .productos_Cervezas_grid_container .img_producto_container .foto_producto1 {
     height: 100%;
-    width: 40%;
+    width: 30%;
   }
   main .productos_Cervezas_grid_container .txt_producto_container .txt_descripcion_producto1 {
     font-size: 17px;
@@ -660,13 +660,13 @@ form input[type=submit]:hover {
     grid-template-columns: 1fr;
   }
   main .productos_Cervezas_grid_container2 .img_producto_container {
-    height: 70%;
+    height: 80%;
     width: 100%;
     justify-content: center;
   }
   main .productos_Cervezas_grid_container2 .img_producto_container .foto_producto1 {
     height: 100%;
-    width: 40%;
+    width: 30%;
   }
   main .productos_Cervezas_grid_container2 .txt_producto_container .txt_descripcion_producto1 {
     font-size: 17px;
