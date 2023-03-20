@@ -1,0 +1,9 @@
+
+@mixin doscolumnas{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+@mixin unacolumna{
+    grid-template-columns: 1fr;
+}
