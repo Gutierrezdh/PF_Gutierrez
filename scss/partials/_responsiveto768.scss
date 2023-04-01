@@ -27,8 +27,10 @@
             .intro_welcome_txt_container{
             width: 100%;
             margin-bottom: 20px;
-            text-align: center;          
+            justify-content: center;                     
                 p{
+                    text-align: center; 
+                    width: 90%;
                     font-size: 17px;
                 }
             }   
@@ -145,11 +147,33 @@
         height: 5rem;
         width: 5rem;
         top:90%;
-        left:93%;
+        left:90%;
             &:hover{
             transform: scale(1.0);
             }  
         }
+            /* formulario de contacto */    
+            .cuerpo_contacto{
+                grid-template-columns: 100%;
+                justify-content: center;
+                    .div_texto_contacto{
+                    height: 100%;
+                    width: 100%;
+                        .texto_contacto{
+                        width: 80%;
+                        text-align: center;
+                        font-size: 17px;
+                        }
+                    }
+                    .form_contacto_container{
+                    width: 100%;
+                        form {
+                        padding: 20px;
+                        width: 80%;
+                        } 
+                    }
+                }
+
     }
     .ul_footer{
         font-size: 100%;

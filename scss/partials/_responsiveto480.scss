@@ -20,6 +20,7 @@
         grid-template-areas:
         "foto"
         "presentacion";
+        justify-items: center;
         @include mix.unacolumna;                
             .intro_welcome_img_container{
             width: 100%;
@@ -31,7 +32,7 @@
             width: 95%;
             margin-bottom: 20px;
             text-align: center;          
-                p{
+                p{                    
                     font-size: 14px;
                 }
             }   
@@ -41,6 +42,7 @@
             grid-template-areas: 
             "foto_taproom" 
             "desc-taproom";
+            justify-items: center;
             @include mix.unacolumna;
                 .img_taproom_container{
                     width: 100%;
@@ -149,11 +151,32 @@
         height: 4rem;
         width: 4rem;
         top:85%;
-        left:80%;
+        left:84%;
             &:hover{
             transform: scale(1.0);
             }  
         }
+            /* formulario de contacto */    
+        .cuerpo_contacto{
+        grid-template-columns: 100%;
+        justify-content: center;
+            .div_texto_contacto{
+            height: 100%;
+            width: 100%;
+                .texto_contacto{
+                width: 80%;
+                text-align: center;
+                font-size: vars.$TitleSize480;
+                }
+            }
+            .form_contacto_container{
+            width: 100%;
+                form {
+                padding: 20px;
+                width: 80%;
+                } 
+            }
+        }    
     }
     .ul_footer{
         font-size: 80%;
@@ -243,11 +266,12 @@
                 height:300px;
             }
         }
-        /* formulario de contacto */
-        form {
-            width: 100%;
-        }
+
     }
+
+
+
+
 
     main{
         .Titulo_principal{
@@ -311,6 +335,27 @@
             transform: scale(1.0);
             }  
         }
+            /* formulario de contacto */    
+        .cuerpo_contacto{
+        grid-template-columns: 100%;
+        justify-content: center;
+                .div_texto_contacto{
+                height: 100%;
+                width: 100%;
+                    .texto_contacto{
+                    width: 80%;
+                    text-align: center;
+                    font-size: 14px;
+                    }
+                }
+                .form_contacto_container{
+                    width: 100%;
+                    form {
+                        padding: 20px;
+                        width: 80%;
+                    } 
+                }
+            }
     }
     .ul_footer{
         font-size: 90%;

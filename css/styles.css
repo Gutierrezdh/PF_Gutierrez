@@ -206,10 +206,12 @@ footer .row .ul_footer {
 /* Body nosotros */
 .reseña_nosotros {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .reseña_nosotros .text_nosotros {
   display: flex;
-  width: 100%;
+  width: 85%;
   text-align: center;
   font-size: 18px;
   justify-content: center;
@@ -238,6 +240,32 @@ footer .row .ul_footer {
 }
 
 /* Formulario de Contacto */
+.cuerpo_contacto {
+  display: grid;
+  grid-template-areas: "div_texto_contacto" "form_contacto_container";
+  margin-bottom: 20px;
+  grid-gap: 20px;
+  grid-template-columns: 2fr;
+}
+.cuerpo_contacto .div_texto_contacto {
+  grid-area: div_texto_contacto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cuerpo_contacto .div_texto_contacto .texto_contacto {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
+.cuerpo_contacto .form_contacto_container {
+  grid-area: form_contacto_container;
+  margin-top: 10px;
+}
+
 form {
   width: 500px;
   margin: 0 auto;
@@ -293,6 +321,7 @@ form input[type=submit]:hover {
   .cuerpo .intro_welcome_grid_container {
     display: grid;
     grid-template-areas: "foto" "presentacion";
+    justify-items: center;
     grid-template-columns: 1fr;
   }
   .cuerpo .intro_welcome_grid_container .intro_welcome_img_container {
@@ -311,6 +340,7 @@ form input[type=submit]:hover {
   }
   .cuerpo .body_taproom {
     grid-template-areas: "foto_taproom" "desc-taproom";
+    justify-items: center;
     grid-template-columns: 1fr;
   }
   .cuerpo .body_taproom .img_taproom_container {
@@ -357,6 +387,7 @@ form input[type=submit]:hover {
   main {
     /* Productos */
     /* Logo Whap */
+    /* formulario de contacto */
   }
   main .Titulo_principal {
     height: 100%;
@@ -404,10 +435,30 @@ form input[type=submit]:hover {
     height: 4rem;
     width: 4rem;
     top: 85%;
-    left: 80%;
+    left: 84%;
   }
   main .img_container_whap:hover {
     transform: scale(1);
+  }
+  main .cuerpo_contacto {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  main .cuerpo_contacto .div_texto_contacto {
+    height: 100%;
+    width: 100%;
+  }
+  main .cuerpo_contacto .div_texto_contacto .texto_contacto {
+    width: 80%;
+    text-align: center;
+    font-size: 17px;
+  }
+  main .cuerpo_contacto .form_contacto_container {
+    width: 100%;
+  }
+  main .cuerpo_contacto .form_contacto_container form {
+    padding: 20px;
+    width: 80%;
   }
   .ul_footer {
     font-size: 80%;
@@ -420,7 +471,6 @@ form input[type=submit]:hover {
     /*     Taproom */
     /* Nosotros - Reseña*/
     /* Nosotros - Ubicacion*/
-    /* formulario de contacto */
   }
   .cuerpo .Titulo_principal {
     height: 80px;
@@ -488,12 +538,10 @@ form input[type=submit]:hover {
     width: 90%;
     height: 300px;
   }
-  .cuerpo form {
-    width: 100%;
-  }
   main {
     /* Productos */
     /* Logo Whap */
+    /* formulario de contacto */
   }
   main .Titulo_principal {
     height: 100%;
@@ -546,6 +594,26 @@ form input[type=submit]:hover {
   main .img_container_whap:hover {
     transform: scale(1);
   }
+  main .cuerpo_contacto {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  main .cuerpo_contacto .div_texto_contacto {
+    height: 100%;
+    width: 100%;
+  }
+  main .cuerpo_contacto .div_texto_contacto .texto_contacto {
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+  }
+  main .cuerpo_contacto .form_contacto_container {
+    width: 100%;
+  }
+  main .cuerpo_contacto .form_contacto_container form {
+    padding: 20px;
+    width: 80%;
+  }
   .ul_footer {
     font-size: 90%;
   }
@@ -577,9 +645,11 @@ form input[type=submit]:hover {
   .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container {
     width: 100%;
     margin-bottom: 20px;
-    text-align: center;
+    justify-content: center;
   }
   .cuerpo .intro_welcome_grid_container .intro_welcome_txt_container p {
+    text-align: center;
+    width: 90%;
     font-size: 17px;
   }
   .cuerpo .body_taproom {
@@ -629,6 +699,7 @@ form input[type=submit]:hover {
   main {
     /* Productos */
     /* Logo Whap */
+    /* formulario de contacto */
   }
   main .Titulo_principal {
     height: 100%;
@@ -676,10 +747,30 @@ form input[type=submit]:hover {
     height: 5rem;
     width: 5rem;
     top: 90%;
-    left: 93%;
+    left: 90%;
   }
   main .img_container_whap:hover {
     transform: scale(1);
+  }
+  main .cuerpo_contacto {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  main .cuerpo_contacto .div_texto_contacto {
+    height: 100%;
+    width: 100%;
+  }
+  main .cuerpo_contacto .div_texto_contacto .texto_contacto {
+    width: 80%;
+    text-align: center;
+    font-size: 17px;
+  }
+  main .cuerpo_contacto .form_contacto_container {
+    width: 100%;
+  }
+  main .cuerpo_contacto .form_contacto_container form {
+    padding: 20px;
+    width: 80%;
   }
   .ul_footer {
     font-size: 100%;

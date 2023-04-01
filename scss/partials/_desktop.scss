@@ -202,9 +202,11 @@ footer {
 /* Body nosotros */
 .reseña_nosotros{
     height: 100%;
+    display: flex;
+    justify-content: center; 
         .text_nosotros{
             display: flex;
-            width: 100%;
+            width: 85%;
             text-align: center;
             font-size: 18px;
             justify-content: center; 
@@ -234,6 +236,36 @@ height:450px;
 }
 
 /* Formulario de Contacto */
+
+.cuerpo_contacto{
+display: grid;
+grid-template-areas: 
+"div_texto_contacto" 
+"form_contacto_container";
+margin-bottom: 20px;
+grid-gap: 20px;
+grid-template-columns: 2fr;    
+    .div_texto_contacto{
+    grid-area: div_texto_contacto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        .texto_contacto{
+            width: 80%;
+            text-align: center;
+            font-size: 18px;
+            }
+        }
+    .form_contacto_container{
+    grid-area: form_contacto_container; 
+    margin-top: 10px;   
+    }
+}
+
+
 form {
     width: 500px;
     margin:0 auto;
