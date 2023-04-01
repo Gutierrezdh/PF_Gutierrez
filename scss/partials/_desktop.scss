@@ -176,6 +176,7 @@ footer {
     display: grid;
     grid-template-areas: "foto_taproom desc-taproom";
     grid-template-columns: 2fr 2fr;
+    margin-bottom: 20px;
         .img_taproom_container{
             grid-area: foto_taproom;  
             width: 800px;
